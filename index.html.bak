@@ -1,6 +1,0 @@
----
-layout: default
-title: 刘思喆@贝吉塔行星
-permalink: /
----	
-{% include themes/effector-wide/index.html %}
