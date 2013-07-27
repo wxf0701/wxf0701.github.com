@@ -1,0 +1,11 @@
+markdown: rdiscount 
+permalink: /:year/:month/:title 
+title: 第二视点@王显峰
+url: http://dearopinion.name
+subscribe: http://dearopinion.name/feed
+exclude: [ README.md, newpost.rb ]
+domain: www.dearopinion.name
+author: 王显峰
+email: wxf0701@gmail.com
+auto: true
+sina_weibo: http://weibo.com/dearopinion  

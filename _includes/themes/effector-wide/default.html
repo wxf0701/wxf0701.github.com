@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.author }}"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/css/effector-wide.css">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS for {{ site.title }}" href="/feed/">
+</head>
+<body onload="prettyPrint()">
+
+  <div class="container">
+      <h1 class="sitename">刘思喆@贝吉塔行星</h1>
+      <div class="nav">
+<a href="/">主页</a>
+<a href="/archive/">存档</a>
+<a href="/links">链接</a>
+<a href="/tag">标签</a>
+<a href="/about">关于</a>
+<a href="/todo">TODO</a>
+<a href="/feed/">订阅</a>
+</div>
+{{ content }}
+<footer>
+  <p><small><a href="https://github.com/sunbjt/sunbjt.github.com">Designed</a> by <a href="http://bjt.name">Sizhe Liu</a> | Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="http://pages.github.com/">GitHub Pages</a> | 版权声明：<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/">CC BY-NC-SA 3.0</a> | <span class="label label-success">{{site.time | date:"%Y-%m-%d"}}</span></small></p>
+  <!-- inspired by http://effectortheme.tumblr.com/ -->
+</footer>
+</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/google-code-prettify/run_prettify.js?skin=desert"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('pre').addClass('prettyprint lang-r') //添加Google code Hight需要的class
+    })
+</script>
+{% if page.url != "/" %}
+{% endif %}
+ <section id="javascript">
+	<script type="text/javascript">
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-8871110-4']);
+              _gaq.push(['_setDomainName', 'www.bjt.name']);
+              _gaq.push(['_trackPageview']);
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+            </script>            
+
+  </section>	
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true
+  },
+TeX: {
+            equationNumbers: {
+                autoNumber: ["AMS"],
+                useLabelIds: true
+            }
+        },
+        "HTML-CSS": {
+            linebreaks: {
+                automatic: true
+            },
+            scale: 100
+        },
+        SVG: {
+            linebreaks: {
+                automatic: true
+            }
+        }
+});  
+</script>
+</body>
+</html>
