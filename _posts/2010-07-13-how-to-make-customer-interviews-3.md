@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: 如何进行客户访谈(三):成果共享
+title: 如何进行客户访谈（三）:成果共享
 tags: 
 - "沟通"
 status: publish
