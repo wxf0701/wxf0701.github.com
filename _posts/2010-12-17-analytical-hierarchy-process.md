@@ -7,7 +7,7 @@ status: publish
 type: post
 published: true
 ---
-关于层次分析法（Analytical Hierarchy Process, AHP）
+# 关于层次分析法（Analytical Hierarchy Process, AHP）
 
 日常生活中有许多决策问题，当我们面临多种方案时需要依据一定的标准选择其中的一种方案：例如选购电冰箱，我们可能依据容量、制冷级别、价格、款式、耗电量、品牌信誉、售后服务等方面的因素选择某一种型号的冰箱。面临各种各样的方案，要进行比较、判断、评价并最终作出决策，这个过程主观因素占有相当的比重，这个运用数学方法解决问题带来了极大的不便；
 
