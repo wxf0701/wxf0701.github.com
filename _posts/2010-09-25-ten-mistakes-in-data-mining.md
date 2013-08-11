@@ -8,25 +8,27 @@ type: post
 published: true
 ---
 我们很容易犯以下错误，如果： 
-0. 缺乏数据（Lack Data） 
-1. 太关注训练（Focus on Training） 
-2. 只依赖一项技术（Rely on One Technique） 
-3. 提错了问题（Ask the Wrong Question） 
-4. 只靠数据来说话（Listen (only) to the Data） 
-5. 使用了未来的信息（Accept Leaks from the Future） 
-6. 抛弃了不该忽略的案例（Discount Pesky Cases） 
-7. 轻信预测（Extrapolate） 
-8. 试图回答所有问题（Answer Every Inquiry） 
-9. 随便地进行抽样（Sample Casually） 
-10. 太相信最佳模型（Believe the Best Model） 
+<ol start='0'>
+	<li>缺乏数据（Lack Data） </li>
+	<li>太关注训练（Focus on Training） </li>
+	<li>只依赖一项技术（Rely on One Technique） </li>
+	<li>提错了问题（Ask the Wrong Question） </li>
+	<li>只靠数据来说话（Listen (only) to the Data） </li>
+	<li>使用了未来的信息（Accept Leaks from the Future） </li>
+	<li>抛弃了不该忽略的案例（Discount Pesky Cases） </li>
+	<li>轻信预测（Extrapolate） </li>
+	<li>试图回答所有问题（Answer Every Inquiry）</li> 
+	<li>随便地进行抽样（Sample Casually） </li>
+	<li>太相信最佳模型（Believe the Best Model）</li>
+</ol> 
 
-0. 缺乏数据（Lack Data）
+# 0. 缺乏数据（Lack Data）
 
 对于分类或预估问题来说，常常由于缺少准确标注的案例而不能获得最佳收益，对于聚类更是如此。  有趣的标注可能非常稀少，因此，在收集到足够多的关键数据之前一些项目不能开局。 
 
 例如：欺诈侦测，在上百万的交易中，可能只有屈指可数的欺诈交易，还有很多的欺诈交易没有被正确标注出来，这就需要在建模前花费大量人力来修正。 
 
-1. 太关注训练（Focus on Training）
+# 1. 太关注训练（Focus on Training）
 
 只有样本外数据上的模型评分结果才真正有用！
 
@@ -34,13 +36,13 @@ published: true
 
 解决方法：进行重抽样（Re-Sampling）。重抽样技术包括：bootstrap、cross-validation、jackknife、leave-one-out…等等。 
 
-2. 只依赖一项技术（Rely on One Technique）
+# 2. 只依赖一项技术（Rely on One Technique）
 
 不要简单地信赖你用单个方法分析的结果，至少要和传统方法（比如线性回归或线性判别分析）做个比较。  
 
 解决方法：使用一系列好的工具和方法。（每种工具或方法可能最多带来5%~10%的改进）。 
 
-3. 提错了问题（Ask the Wrong Question）
+# 3. 提错了问题（Ask the Wrong Question）
 
 a)项目的目标：一定要锁定正确的目标 
 
@@ -50,20 +52,24 @@ b)模型的目标：让计算机去做你希望它做的事
 
 大多数研究人员会沉迷于模型的收敛性来尽量降低误差，这样让他们可以获得数学上的美感。但更应该让计算机做的事情应该是如何改善业务，而不是仅仅侧重模型计算上的精度。 
 
-4. 只靠数据来说话（Listen (only) to the Data）
+# 4. 只靠数据来说话（Listen (only) to the Data）
 
-a)投机取巧的数据：数据本身只能帮助分析人员找到什么是显著的结果，但它并不能告诉你结果是对还是错。 
-b)经过设计的实验：某些实验设计中掺杂了人为的成分，这样的实验结果也常常不可信。 
+<ol type='a'>
+	<li>投机取巧的数据：数据本身只能帮助分析人员找到什么是显著的结果，但它并不能告诉你结果是对还是错。</li> 
+	<li>经过设计的实验：某些实验设计中掺杂了人为的成分，这样的实验结果也常常不可信。 </li>
+</ol>
 
-5. 使用了未来的信息（Accept Leaks from the Future）
+# 5. 使用了未来的信息（Accept Leaks from the Future）
 
 例子：预测芝加哥银行在某天的利率，使用神经网络建模，模型的准确率达到95%。但在模型中却使用了该天的利率作为输入变量。
 
 解决方法： 
-a)要仔细查看那些让结果表现得异常好的变量，这些变量有可能是不应该使用，或者不应该直接使用的。 
-b)给数据打上时间戳，避免被误用。  
+<ol type='a'>
+	<li>要仔细查看那些让结果表现得异常好的变量，这些变量有可能是不应该使用，或者不应该直接使用的。 </li>
+	<li>给数据打上时间戳，避免被误用。</li>
+</ol>
 
-6. 抛弃了不该忽略的案例（Discount Pesky Cases）
+# 6. 抛弃了不该忽略的案例（Discount Pesky Cases）
 
 异常值可能会导致错误的结果，但也可能是问题的答案，数据中的不一致性有可能会是解决问题的线索，深挖下去也许可以解决一个大的业务问题。 
 
@@ -71,30 +77,25 @@ b)给数据打上时间戳，避免被误用。
 
 解决方法：可视化可以帮助你分析大量的假设是否成立。 
 
-7. 轻信预测（Extrapolate）
-
+# 7. 轻信预测（Extrapolate）
 人们常常在经验不多的时候轻易得出一些结论，即便发现了一些反例，人们也不太愿意放弃原先的想法。
 
 解决方法：没有正确的结论，只有越来越准确的结论。 
 
-8. 试图回答所有问题（Answer Every Inquiry）
-
+# 8. 试图回答所有问题（Answer Every Inquiry）
 “不知道”是一种有意义的模型结果，模型也许无法100%准确回答问题，但至少可以帮我们估计出现某种结果的可能性。 
 
-9. 随便地进行抽样（Sample Casually）
-
+# 9. 随便地进行抽样（Sample Casually）
 a)降低抽样水平。 
-
 解决方法：“喝前摇一摇！”先打乱原始数据集中的顺序，从而保证抽样的随机性。 
 
 b) 提高抽样水平。 
-
 解决方法：先进行数据集划分，然后再提高训练集中违约客户的权重。 
 
-10. 太相信最佳模型（Believe the Best Model）
-
+# 10. 太相信最佳模型（Believe the Best Model）
 可解释性并不一定总是必要的，看起来并不完全正确或者可以解释的模型，有时也会有用；“最佳”模型中使用的一些变量，会分散人们太多的注意力。
 
 解决方法：把多个模型集装起来可能会带来更好更稳定的结果。 
 
-原文：http://www.salford-systems.com/doc/elder.pdf
+原文：
+<http://www.salford-systems.com/doc/elder.pdf />
