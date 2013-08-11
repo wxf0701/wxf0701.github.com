@@ -57,29 +57,29 @@ published: true
 
 # 优秀图表的设计原则
 
-1. 减少图表垃圾和增加有效印刷比率：通过移除装饰元素来减少图表垃圾，通过让每一个像素都表述数据来增加有效印刷比率；
++ 减少图表垃圾和增加有效印刷比率：通过移除装饰元素来减少图表垃圾，通过让每一个像素都表述数据来增加有效印刷比率；
 
 ![仪表盘图表设计原则1](/upload/pic/2010-09-27-dashboard-chart1.png "")
 
-2. 最大化数据和背景的对比
++ 最大化数据和背景的对比
 
 ![仪表盘图表设计原则2](/upload/pic/2010-09-27-dashboard-chart2.png "")
 
-3. 易读的标签：在任何可能的时候，避免旋转的标签，它们难以阅读且会分散在数字上的注意力。
++ 易读的标签：在任何可能的时候，避免旋转的标签，它们难以阅读且会分散在数字上的注意力。
 
 ![仪表盘图表设计原则3](/upload/pic/2010-09-27-dashboard-chart3.png "")
 
-4. 不要重复你自己：对单数据系列的图，不需要同时又图例和标题，图表的标题完全足以解释读者看到的东西。
++ 不要重复你自己：对单数据系列的图，不需要同时又图例和标题，图表的标题完全足以解释读者看到的东西。
 
 ![仪表盘图表设计原则4](/upload/pic/2010-09-27-dashboard-chart4.png "")
 
-5. 避免平滑和3D：不要为线条上增添平滑特性，这会让读者不知道数据值到底在哪儿里。
++ 避免平滑和3D：不要为线条上增添平滑特性，这会让读者不知道数据值到底在哪儿里。
 
 ![仪表盘图表设计原则5](/upload/pic/2010-09-27-dashboard-chart5.png "")
 
-6. 小心使用渐进色：使用纯色或稍许渐进色，以确保柱图的尾端是可见的。
++ 小心使用渐进色：使用纯色或稍许渐进色，以确保柱图的尾端是可见的。
 
-7. 使用排序来辅助理解：对重要指标的排序会使图表更有条理
++ 使用排序来辅助理解：对重要指标的排序会使图表更有条理
 
 # 关于表格的设计
 
@@ -94,23 +94,23 @@ published: true
 
 # 高级仪表盘组件最佳实践和资源
 
-1. 电花谱线（Sparklines）
++ 电花谱线（Sparklines）
 
 <http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR/>
 
-2. 树状图（Treddmaps）
++ 树状图（Treddmaps）
 
 <http://www.juiceanalytics.com/writing/10-lessons-treemap-design/>
 
 
-3. 地理图（Geographic maps）
++ 地理图（Geographic maps）
 
 <http://www.perceptualedge.com/articles/visual_business_intelligence/geographical_data_visualization.pdf/>
 
-4. 警报（Alerts）
++ 警报（Alerts）
 
 <http://www.juiceanalytics.com/writing/dashboard-alerts-checklist/>
 
-5. 过滤器（Filters）
++ 过滤器（Filters）
 
 <http://www.juiceanalytics.com/writing/five-features-effective-filters/>
