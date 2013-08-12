@@ -11,7 +11,7 @@ published: true
 ---
 传统的分类方法是在一个由各种可能的函数构成的空间中寻找一个最接近实际分类函数的分类器。这些单个的分类器模型主要有决策树、人工神经网络、朴素贝叶斯分类器等等。
 
-可以通过聚集多个分类器的预测结果提高分类器的分类准确率，这一方法称为[集成（Ensemble）](http://en.wikipedia.org/wiki/Ensemble_learning)学习或分类器组合（Classifier Combination），该方法由训练数据构建一组基分类器（Base Classifier），然后通过对每个基分类器的预测进行投票来进行分类。
+可以通过聚集多个分类器的预测结果提高分类器的分类准确率，这一方法称为[集成（Ensemble）学习](http://en.wikipedia.org/wiki/Ensemble_learning)或分类器组合（Classifier Combination），该方法由训练数据构建一组基分类器（Base Classifier），然后通过对每个基分类器的预测进行投票来进行分类。
 
 本文首先介绍集成学习算法的基本思想、前提条件，进而讨论集成学习涉及的问题：基本分类器之间的关系、生成基本分类器的方法、基本分类器分类结果的整合，最后对常用的集成学习进行了简单比较。
 
