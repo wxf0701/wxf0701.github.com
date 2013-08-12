@@ -14,10 +14,12 @@ published: true
 
 * 从students.txt读入文件到数据集students;
 
+`
     DATA students;
         INFILE 'C:\students.txt';
         INPUT id class $ gender $ math english history chem phys literat;
     RUN;
+`
 
 * 查看数据集内容;
 
